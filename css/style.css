@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.2rem;
+    color: #000000de;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 0.8rem;
+}
+
+nav ul li a{
+    color: inherit;
+}
+
+.icones-nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icones-nav i {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #424242;
+}
+
+.icones-nav i:hover {
+    background-color: #e7e7e7;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; 
+    gap: 1.1rem;
+}
+
+.image {
+    max-width: 272px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 1.7rem;
+
+}
+
+form {
+    position: relative;
+    min-width: 45%;
+    margin: 0 auto; 
+}
+
+form input {
+   width: 100%;
+   height: 3rem;
+   border: 1px solid rgb(209, 209, 209);
+   box-shadow: 0px 0px 6px 1px rgba(185, 185, 185,0.75);
+   -webkit-box-shadow: 0px 0px 6px 1px rgba(211, 211, 211, 0.75);
+   -moz-box-shadow: 0px 0px 6px 1px rgba(185, 185, 185,0.75);
+   border-radius: 1.8rem;
+   padding: 0.8rem 5.2rem 0.8rem 3rem;
+}
+
+form input:hover {
+    border-color: #e9e9e9;
+}
+
+.ri-mic-line, .ri-camera-ai-line {
+    cursor: pointer;
+}
+
+
+.ri-search-line {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    color: #7e7e7e;  
+    font-size: 1.1rem; 
+}
+
+.ri-mic-line {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    font-size: 1.3rem;
+    color: #4d4c4c;
+}
+
+.ri-camera-ai-line {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    font-size: 1.3rem;
+    color: #4d4c4c;
+}
+
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+   width: 50%; 
+    margin: 0 auto;
+}
+
+.inputs input {
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: #272626de;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.inputs input:hover {
+    border-color: #b9b9b9;
+}
+
+.inputs input:active {
+    border-color: blue;
+}
+
+footer {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 0.8rem;
+    position: relative;
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 1.5rem
+}
+
+span {
+    color: #1f1f1f;
+}
+
+hr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border: none;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+.links-geral {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 0.5rem;
+    color: #1f1f1f;
+}
+
+.links-geral a {
+    color: #1f1f1f;
+    font-size: 0.9rem;
+}
+
+.links-geral a:hover {
+    text-decoration: underline;
+}
+
+.links-left, .links-right {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (width < 900px) {
+    .links-geral a {
+        font-size: 0.7rem;
+    }
+
+    .links-geral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    hr {
+    top: 40%;
+    }
+    
+}
+
+@media (width < 425px) {
+    .links-geral a {
+        font-size: 0.5rem;
+    }
+
+    span {
+        font-size: 0.7rem;
+    }
+
+    .inputs {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
